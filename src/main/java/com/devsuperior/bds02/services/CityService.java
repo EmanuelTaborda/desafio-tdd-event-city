@@ -30,6 +30,12 @@ public class CityService {
         return new CityDTO(entity);
     }
 
+    @Transactional
+    public void delete(Long id) {
+        City entity = repository.getReferenceById(id);
+        repository.delete(entity);
+    }
+
 
     private void copyDtoToEntiy(CityDTO dto, City entity) {
         entity.setName(dto.getName());
