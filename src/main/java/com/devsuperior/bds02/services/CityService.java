@@ -34,13 +34,14 @@ public class CityService {
         return new CityDTO(entity);
     }
 
-    @Transactional(propagation = Propagation.NEVER)
+    @Transactional
     public void delete(Long id) {
         if (!repository.existsById(id)) {
             throw new ResourceNotFoundException("Recurso não encontrado");
         }
         try {
             repository.deleteById(id);
+            repository.flush();
         }
         catch (DataIntegrityViolationException e) {
             throw new DatabaseException("Falha de integridade referencial");
