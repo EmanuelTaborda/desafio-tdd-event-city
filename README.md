@@ -1,6 +1,6 @@
 # Desafio TDD — Event City
 
-Projeto desenvolvido em Java com Spring Boot com foco em Test-Driven Development (TDD) e testes de integração. O objetivo é praticar modelagem de domínio, regras de negócio, testes automatizados (unitários e de integração) e aplicação das melhores práticas de arquitetura e organização de código.
+Projeto desenvolvido em Java com Spring Boot com foco em Test-Driven Development (TDD) e testes de integração. O objetivo é praticar modelagem de domínio, regras de negócio, testes automatizados de integração e aplicação das melhores práticas de arquitetura e organização de código.
 
 ---
 
